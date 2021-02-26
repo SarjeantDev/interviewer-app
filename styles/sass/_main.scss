@@ -1,0 +1,48 @@
+.appContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: darkslategrey;
+
+    .contentContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    h2 {
+        font-size: 40px;
+        text-align: center;
+        padding: 50px 50px 50px 50px;
+        cursor: pointer;
+        letter-spacing: 2px
+    }
+    button {
+        height: 50px;
+        width: 115px;
+        background-color: transparent;
+
+    }
+    i {
+        padding: 10px;
+        ::before {
+            content: ' ';
+        }    
+    }
+    .hidden {
+        display: none;
+    }
+    p {
+        padding: 10px;
+        font-weight: bold;
+    }
+}
+
+
+
+
