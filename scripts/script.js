@@ -59,18 +59,18 @@ const questionBank = [
     'What makes you unique?'
 ];
 
-const colorBank = [
-    '#006466ff',
-    '#065a60ff',
-    '#0b525bff',
-    '#144552ff',
-    '#1b3a4bff',
-    '#212f45ff',
-    '#272640ff',
-    '#312244ff',
-    '#3e1f47ff',
-    '#4d194dff'
-];
+// const colorBank = [
+//     '#006466ff',
+//     '#065a60ff',
+//     '#0b525bff',
+//     '#144552ff',
+//     '#1b3a4bff',
+//     '#212f45ff',
+//     '#272640ff',
+//     '#312244ff',
+//     '#3e1f47ff',
+//     '#4d194dff'
+// ];
 
 let newQ = '';
 let firstQuestion = '';
@@ -93,7 +93,7 @@ function shuffleArray(arr) {
 
 window.addEventListener('load', () => {
     shuffleArray(questionBank);
-    shuffleArray(colorBank);
+    // shuffleArray(colorBank);
 })
 
 window.addEventListener('keydown', (e) => {
@@ -110,10 +110,10 @@ window.addEventListener('keydown', (e) => {
     }
 });
 
-const newColor = () => {
-    newBgColor = colorBank[counter]
-    container.style.backgroundColor = newBgColor;
-}
+// const newColor = () => {
+//     newBgColor = colorBank[counter]
+//     container.style.backgroundColor = newBgColor;
+// }
 
 const previousQuestion = () => {
     speechSynthesis.cancel();
@@ -131,7 +131,7 @@ const previousQuestion = () => {
         }
         counter = 1;
     }
-    newColor();
+    // newColor();
 }
 
 const nextQuestion = () => {
@@ -151,7 +151,7 @@ const nextQuestion = () => {
         }
         counter++;
     };
-    newColor();
+    // newColor();
 }
 
 prevQuestion.addEventListener('mouseup', () => {

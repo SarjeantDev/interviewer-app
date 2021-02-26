@@ -269,7 +269,7 @@ h2, span, i, button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: darkslategrey;
+  background-color: black;
 }
 
 .appContainer .contentContainer {
