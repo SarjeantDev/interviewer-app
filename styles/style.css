@@ -290,9 +290,10 @@ h2, span, i, button {
 .appContainer h2 {
   font-size: 40px;
   text-align: center;
-  padding: 50px 50px 50px 50px;
+  padding: 10px 50px;
   cursor: pointer;
   letter-spacing: 2px;
+  width: 100%;
 }
 
 .appContainer button {
