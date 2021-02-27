@@ -138,11 +138,19 @@ const nextQuestion = () => {
     speechSynthesis.cancel();
     if (counter >= 1) {
         newQ = questionBank[counter]
-        question.innerHTML = newQ;
-        if (unmute.className.includes('hidden')) {
-            textToSpeech(newQ)
+        if (newQ) {
+            question.innerHTML = newQ;
+            if (unmute.className.includes('hidden')) {
+                textToSpeech(newQ)
+            }
+            counter++;
+        } else {
+            question.innerHTML = 'End of questions. Refresh page for new random sequence or click me to restart.';
+            if (unmute.className.includes('hidden')) {
+                textToSpeech(newQ)
+            }
+            counter = 0;
         }
-        counter++;
     } else {
         firstQuestion = 'Tell me about yourself.';
         question.innerHTML = firstQuestion;
