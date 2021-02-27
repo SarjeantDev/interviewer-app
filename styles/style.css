@@ -297,8 +297,6 @@ h2, span, i, button {
 }
 
 .appContainer button {
-  height: 50px;
-  width: 115px;
   background-color: transparent;
 }
 
@@ -317,4 +315,19 @@ h2, span, i, button {
 .appContainer p {
   padding: 10px;
   font-weight: bold;
+}
+
+@media (max-width: 500px) {
+  .appContainer h2 {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 350px) {
+  .appContainer h2 {
+    font-size: 20px;
+  }
+  .appContainer i, .appContainer p {
+    font-size: 12px;
+  }
 }
